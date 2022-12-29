@@ -1,4 +1,5 @@
 import { Profile } from './Profile/Profile';
+import PropTypes from 'prop-types';
 import user from './user.json';
 
 export const App = () => {
@@ -13,4 +14,10 @@ export const App = () => {
       likes={user.stats.likes}
     />
   );
+};
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
 };
