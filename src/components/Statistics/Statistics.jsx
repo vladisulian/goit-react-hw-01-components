@@ -1,3 +1,4 @@
+import '../Statistics/Statistics.css';
 export const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
