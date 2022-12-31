@@ -6,8 +6,8 @@ export const Statistics = ({ title, stats }) => {
       <ul className="stat-list">
         {stats.map(stat => (
           <li key={stat.id}>
-            <span>{stat.label}</span>
-            <span>{stat.percentage}</span>
+            <span className="label">{stat.label}</span> <br />
+            <span className="percentage">{stat.percentage}%</span>
           </li>
         ))}
       </ul>
@@ -15,4 +15,23 @@ export const Statistics = ({ title, stats }) => {
   );
 };
 
+// this is first change of color (don't know why)
+setTimeout(() => {
+  switchColor();
+}, 1);
 // ? - - - - -
+const interval = 2000;
+
+// setInterval(() => {
+//   switchColor();
+// }, interval);
+
+function switchColor() {
+  const listItem = document.querySelectorAll('li');
+
+  listItem.forEach(e => {
+    e.style.background = `#${Math.floor(Math.random() * 16777215)
+      .toString(16)
+      .padStart(6, 0)}`;
+  });
+}
