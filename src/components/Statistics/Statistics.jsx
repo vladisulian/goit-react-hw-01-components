@@ -15,8 +15,9 @@ export const Statistics = ({ title, stats }) => {
   );
 };
 
-// this is first change of color (don't know why)
-// this function can see list-item just after 1ms
+// this timeout needed because function (switchColor)
+// didn't see list-item right away
+// he need at least 1 ms to see it
 setTimeout(() => {
   switchColor();
 }, 1);
