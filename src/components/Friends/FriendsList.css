@@ -2,6 +2,26 @@
   display: flex;
   width: 300px;
   flex-wrap: wrap;
+  gap: 25px;
 }
 .item {
+  position: relative;
+  background-color: white;
+}
+.status {
+  position: absolute;
+  left: 40px;
+  bottom: 50px;
+
+  color: transparent;
+  background-color: red;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+.avatar {
+  padding-bottom: 20px;
+}
+.name {
+  padding-bottom: 20px;
 }
