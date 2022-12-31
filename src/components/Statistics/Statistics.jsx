@@ -16,15 +16,16 @@ export const Statistics = ({ title, stats }) => {
 };
 
 // this is first change of color (don't know why)
+// this function can see list-item just after 1ms
 setTimeout(() => {
   switchColor();
 }, 1);
 // ? - - - - -
 const interval = 2000;
 
-// setInterval(() => {
-//   switchColor();
-// }, interval);
+setInterval(() => {
+  switchColor();
+}, interval);
 
 function switchColor() {
   const listItem = document.querySelectorAll('li');
