@@ -2,7 +2,7 @@ import { Profile } from './Profile/Profile';
 import PropTypes from 'prop-types';
 import user from './user.json';
 import data from './data.json';
-import { StatisticsList, StatisticsListItem } from './Statistics/Statistics';
+import { Statistics } from './Statistics/Statistics';
 
 export const App = () => {
   return (
@@ -15,7 +15,8 @@ export const App = () => {
     //   views={user.stats.views}
     //   likes={user.stats.likes}
     // ></Profile>
-    <StatisticsList stats={data} id={data.id} />
+    <Statistics title="Upload stats" stats={data}></Statistics>
+    // (<Statistics stats={data}></Statistics>)
   );
 };
 Profile.propTypes = {

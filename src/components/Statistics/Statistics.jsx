@@ -1,9 +1,14 @@
-export const StatisticsList = ({ title, stats, id }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+      <h2 className="title">{title}</h2>
       <ul className="stat-list">
-        <li>{id}</li>
+        {stats.map(stat => (
+          <li key={stat.id}>
+            {stat.label} <br />
+            {stat.percentage}
+          </li>
+        ))}
       </ul>
     </section>
   );
