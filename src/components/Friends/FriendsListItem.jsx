@@ -16,8 +16,6 @@ export const FriendsListItem = ({ friends }) => {
 const delay = 1;
 setTimeout(() => {
   const span = document.querySelectorAll('.status');
-  console.log('All spans', span[0]);
-  console.log(span[0].textContent);
 
   span.forEach(function (e, i) {
     if (e.textContent === 'true') {
