@@ -10,14 +10,13 @@
 }
 .status {
   position: absolute;
-  left: 40px;
+  left: 45px;
   bottom: 50px;
 
   color: transparent;
-  background-color: red;
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
 }
 .avatar {
   padding-bottom: 20px;

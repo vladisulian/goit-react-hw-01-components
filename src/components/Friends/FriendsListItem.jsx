@@ -13,3 +13,18 @@ export const FriendsListItem = ({ friends }) => {
   ));
 };
 
+const delay = 1;
+setTimeout(() => {
+  const span = document.querySelectorAll('.status');
+  console.log('All spans', span[0]);
+  console.log(span[0].textContent);
+
+  span.forEach(function (e, i) {
+    if (e.textContent === 'true') {
+      e.style.background = 'blue';
+    } else {
+      e.style.background = 'red';
+    }
+    console.log('Span number:', i, 'Span text content:', e.textContent);
+  });
+}, delay);
