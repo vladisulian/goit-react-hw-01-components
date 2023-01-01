@@ -47,4 +47,5 @@ Profile.propTypes = {
 };
 Statistics.propTypes = {
   title: PropTypes.string,
+  stats: PropTypes.array,
 };
