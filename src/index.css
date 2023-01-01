@@ -19,4 +19,5 @@ code {
   align-items: center;
   flex-wrap: wrap;
   gap: 100px;
+  margin-left: 120px;
 }

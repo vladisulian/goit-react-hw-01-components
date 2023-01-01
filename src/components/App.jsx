@@ -17,7 +17,7 @@ import transactions from './data/transactions.json';
 export const App = () => {
   return (
     <AppContainer>
-      {/* <Profile
+      <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
@@ -35,7 +35,7 @@ export const App = () => {
           name={friends.name}
           isOnline={friends.isOnline}
         />
-      </FriendsList> */}
+      </FriendsList>
       <Transactions items={transactions} />
     </AppContainer>
   );
