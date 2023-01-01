@@ -18,6 +18,7 @@ code {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 100px;
   margin-left: 120px;
 }
