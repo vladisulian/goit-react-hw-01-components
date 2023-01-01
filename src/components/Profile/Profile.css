@@ -27,7 +27,6 @@ ul {
 
   width: 250px;
 
-
   background-color: black;
   border-radius: 10px;
 
@@ -49,7 +48,6 @@ ul {
   margin-bottom: 15px;
 }
 .profile__name {
-  font-family: cursive;
   font-size: 24px;
 
   margin-bottom: 5px;
