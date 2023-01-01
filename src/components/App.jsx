@@ -6,10 +6,13 @@ import PropTypes from 'prop-types';
 import user from './data/user.json';
 import data from './data/data.json';
 import friends from './data/friends.json';
+import transactions from './data/transactions.json';
 
-console.log('user', user);
-console.log('data', data);
-console.log('friends', friends);
+// console.log('user', user);
+// console.log('data', data);
+// console.log('friends', friends);
+console.log('transactions', transactions);
+
 
 export const App = () => {
   return (

@@ -23,6 +23,6 @@ setTimeout(() => {
     } else {
       e.style.background = 'red';
     }
-    console.log('Span number:', i, 'Span text content:', e.textContent);
+    // console.log('Span number:', i, 'Span text content:', e.textContent);
   });
 }, delay);
