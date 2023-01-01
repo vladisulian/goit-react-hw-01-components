@@ -1,0 +1,22 @@
+.transaction-history {
+  color: #160a0a;
+}
+
+thead {
+  height: 25px;
+  background-color: cadetblue;
+}
+tr {
+  background-color: #836a6a;
+}
+
+tr:nth-child(even) {
+  background-color: gray;
+}
+
+th,
+td {
+  font-weight: 200;
+  padding-left: 10px;
+  padding-right: 10px;
+}
