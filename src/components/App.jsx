@@ -14,7 +14,7 @@ console.log('friends', friends);
 export const App = () => {
   return (
     <AppContainer>
-      {/* <Profile
+      <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
@@ -23,8 +23,8 @@ export const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Statistics title="Upload stats" stats={data} /> */}
-      <FriendsList >
+      <Statistics title="Upload stats" stats={data} />
+      <FriendsList>
         <FriendsListItem
           friends={friends}
           id={friends.id}

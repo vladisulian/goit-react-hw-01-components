@@ -3,6 +3,8 @@
   width: 265px;
   gap: 30px;
   flex-direction: column;
+
+  padding-top: 50px;
 }
 .item {
   position: relative;
