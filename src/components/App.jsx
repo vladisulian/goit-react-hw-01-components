@@ -2,6 +2,7 @@ import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
 import { FriendsList } from './Friends/FriendsList';
 import { FriendsListItem } from './Friends/FriendsListItem';
+import { Transactions } from './TransactionsHistory/TransactionsHistory';
 import PropTypes from 'prop-types';
 import user from './data/user.json';
 import data from './data/data.json';
@@ -13,11 +14,10 @@ import transactions from './data/transactions.json';
 // console.log('friends', friends);
 console.log('transactions', transactions);
 
-
 export const App = () => {
   return (
     <AppContainer>
-      <Profile
+      {/* <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
@@ -35,7 +35,8 @@ export const App = () => {
           name={friends.name}
           isOnline={friends.isOnline}
         />
-      </FriendsList>
+      </FriendsList> */}
+      <Transactions items={transactions} />
     </AppContainer>
   );
 };
