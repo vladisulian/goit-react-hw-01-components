@@ -1,4 +1,5 @@
 .transaction-history {
+  font-family: monospace;
   color: #160a0a;
 }
 
@@ -8,6 +9,14 @@ thead {
 }
 tr {
   background-color: #836a6a;
+
+  cursor: pointer;
+
+  transition: scale 500ms ease;
+}
+
+tr:hover {
+  scale: 1.1;
 }
 
 tr:nth-child(even) {
