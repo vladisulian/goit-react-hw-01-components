@@ -1,27 +1,49 @@
 .friends-list {
   display: flex;
-  width: 300px;
-  flex-wrap: wrap;
+  width: 265px;
   gap: 25px;
+  flex-direction: column;
 }
 .item {
   position: relative;
+
+  height: 90px;
+
+  display: flex;
+  align-items: center;
   background-color: white;
   box-shadow: 4px 21px 5px 0px rgb(0 0 0 / 75%);
 }
 .status {
-  position: absolute;
+  /* position: absolute;
   left: 45px;
-  bottom: 50px;
+  bottom: 50px; */
+
+  width: 15px;
+  height: 15px;
+
+  margin-left: 25px;
 
   color: transparent;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
 }
 .avatar {
+  position: absolute;
+  left: -15px;
+  top: 5px;
+
+  width: 70px;
+
   padding-bottom: 20px;
+  margin-left: 65px;
+
+  border-radius: 20%;
+  /* border: 1px solid red; */
 }
 .name {
-  padding-bottom: 20px;
+  position: absolute;
+  right: 70px;
+  font-size: 24px;
+
+  font-family: 'Roboto';
 }
